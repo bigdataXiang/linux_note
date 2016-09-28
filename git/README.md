@@ -1,7 +1,7 @@
 #代码提交方式
 1.VCS（菜单栏和version control窗口）
 2.git命令方式
-
+git 
 #idea工具
 Mark Directory As Source Root:标记该文件夹为代码根路径
 
