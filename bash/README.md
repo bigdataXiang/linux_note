@@ -70,5 +70,5 @@ cp命令还支持同时复制多个文件，当一次复制多个文件时，目
 
 > sudo chmod -R 777  /Library/Python : 给文件夹/Library/Python增加权限
 
-# 修改文件路径
+# 修改环境变量的路径
 /etc/profile 
