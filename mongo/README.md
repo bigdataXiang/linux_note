@@ -7,3 +7,10 @@
   安装
 + 完成上述的安装命令之后，执行"mongod"命令，打开mongodb服务
 + 执行"mongo"命令，查看数据库中的数据
+
+# linux 下notepad++的安装
+```
+sudo add-apt-repository ppa:notepadqq-team/notepadqq
+sudo apt-get update
+sudo apt-get install notepadqq
+```
