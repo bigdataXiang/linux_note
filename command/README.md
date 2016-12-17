@@ -57,3 +57,17 @@ http://trac.osgeo.org/gdal/wiki/DownloadSource
 5.使用【python】命令进入python编译模式，使用【from osgeo import ogr】进行验证
   
 ```
+
+# [linux下Linux下查看CPU型号,内存大小,硬盘空间命令](http://3lian.com/edu/2014/01-07/122036.html)
++ 查看CPU个数
+># cat /proc/cpuinfo | grep "physical id" | uniq | wc -l
++ 查看CPU核数
+># cat /proc/cpuinfo | grep "cpu cores" | uniq
++ 查看CPU型号
+># cat /proc/cpuinfo | grep 'model name' |uniq
++ 查看内存总数
+>#cat /proc/meminfo | grep MemTotal
++ 查看内存条数
+># dmidecode |grep -A16 "Memory Device$"
++ 查看硬盘大小
+># fdisk -l | grep Disk
