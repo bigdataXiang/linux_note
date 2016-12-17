@@ -43,3 +43,17 @@ make是用来编译的，它从Makefile中读取指令，然后编译。
 
 make install是用来安装的，它也从Makefile中读取指令，安装到指定的位置。
 ```
+
+# linux 下gdal的安装
+```
+1.下载安装包：
+http://trac.osgeo.org/gdal/wiki/DownloadSource
+2.解压到当前文件，进入【gdal-2.1.2】
+3.执行以下代码进行编译：
+  【./configure --with-python】
+  【make】
+  【sudo make install】
+4.执行【sudo apt-get install odbcinst1debian2 libgdal1i】获取依赖的包
+5.使用【python】命令进入python编译模式，使用【from osgeo import ogr】进行验证
+  
+```
