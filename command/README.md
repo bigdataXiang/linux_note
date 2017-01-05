@@ -45,12 +45,13 @@ make install是用来安装的，它也从Makefile中读取指令，安装到指
 ```
 
 # linux 下gdal的安装
+[Enabling GEOS for GDAL/OGR](https://www.pythonanywhere.com/forums/topic/2801/)
 ```
 1.下载安装包：
 http://trac.osgeo.org/gdal/wiki/DownloadSource
 2.解压到当前文件，进入【gdal-2.1.2】
 3.执行以下代码进行编译：
-  【./configure --with-python】
+  【./configure  --with-python -with-geos=yes】
   【make】
   【sudo make install】
 4.执行【sudo apt-get install odbcinst1debian2 libgdal1i】获取依赖的包
@@ -60,14 +61,23 @@ http://trac.osgeo.org/gdal/wiki/DownloadSource
 
 # [linux下Linux下查看CPU型号,内存大小,硬盘空间命令](http://3lian.com/edu/2014/01-07/122036.html)
 + 查看CPU个数
-># cat /proc/cpuinfo | grep "physical id" | uniq | wc -l
+> cat /proc/cpuinfo | grep "physical id" | uniq | wc -l
 + 查看CPU核数
-># cat /proc/cpuinfo | grep "cpu cores" | uniq
+> cat /proc/cpuinfo | grep "cpu cores" | uniq
 + 查看CPU型号
-># cat /proc/cpuinfo | grep 'model name' |uniq
+> cat /proc/cpuinfo | grep 'model name' |uniq
 + 查看内存总数
->#cat /proc/meminfo | grep MemTotal
+>cat /proc/meminfo | grep MemTotal
 + 查看内存条数
-># dmidecode |grep -A16 "Memory Device$"
+>dmidecode |grep -A16 "Memory Device$"
 + 查看硬盘大小
-># fdisk -l | grep Disk
+>fdisk -l | grep Disk
+
+# linux 连接服务器
+```
+ssh 用户名@服务器ip
+例如：ssh gir@192.168.137.179
+
+cd woaiwojia/block
+
+```
