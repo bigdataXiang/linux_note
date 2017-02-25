@@ -51,7 +51,7 @@ make install是用来安装的，它也从Makefile中读取指令，安装到指
 http://trac.osgeo.org/gdal/wiki/DownloadSource
 2.解压到当前文件，进入【gdal-2.1.2】
 3.执行以下代码进行编译：
-  【./configure  --with-python -with-geos=yes】
+  【./configure  --with-python -with-geos=yes】//在服务器上安装时，如果权限不够，需要加chmod +x
   【make】
   【sudo make install】
 4.执行【sudo apt-get install odbcinst1debian2 libgdal1i】获取依赖的包
@@ -75,8 +75,18 @@ http://trac.osgeo.org/gdal/wiki/DownloadSource
 
 # linux 连接服务器
 ```
+root : sinanadministrator
+
 ssh 用户名@服务器ip
-例如：ssh gir@192.168.137.179
+例如：
+ssh gir@192.168.137.178
+ssh gir@192.168.137.179
+ssh gir@192.168.137.180
+ssh gir@192.168.137.181
+ssh gir@192.168.137.182
+ssh gir@192.168.137.183
+ssh gir@192.168.137.184
+ssh gir@192.168.137.185
 
 cd woaiwojia/block
 
